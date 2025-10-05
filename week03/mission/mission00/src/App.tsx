@@ -5,7 +5,7 @@ import { Link } from './Link';
 const DetailPage = () => <h1>Detail</h1>;
 const HomePage = () => <h1>Home</h1>;
 const DoyunPage = () => <h1>Do yun</h1>;
-const NotFoundPage = () => <h1>Not Founded</h1>;
+const NotFoundPage = () => <h1>Not Found</h1>;
 
 const Header = () => (
   <nav style={{ display: 'flex', gap: '10px' }}>

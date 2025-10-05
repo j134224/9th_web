@@ -27,3 +27,10 @@ vote_average
 vote_count
 : number
 }
+
+export type MovieResponse {
+    page : number;
+    result : Movie[];
+    total_pages: number;
+    total_results: number;
+}

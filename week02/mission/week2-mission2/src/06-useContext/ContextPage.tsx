@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import NavBar from "./NavBar";
-import ThemeContent from './ThemeContent';
-import { ThemeProvider } from './context/ThemProvider';
+import { ThemeProvider } from "./context/ThemeProvider";
+import Navbar from "./components/NavBar";
+import ThemeContent from "./components/ThemeContent";
 
-export default function ContextPage() : Element {
-    return (
+export default function ContextPage() {
+
+    return <>
         <ThemeProvider>
-            <div className='flex flex-col item-center justify-center min-h-screen'>
-                <NavBar></NavBar>
-                <ThemeContent></ThemeContent>
+            <div className='flex flex-col items-center min-h-screen'>
+                <Navbar />
+                <main className='flex-1  w-full'>
+                    <ThemeContent />
+                </main>
             </div>
         </ThemeProvider>
-    );
+    </>
 }
